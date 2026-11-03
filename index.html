@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajanta Stories | The Mahajanaka Jataka</title>
+<style>
+:root{--ink:#2d211b;--muted:#725f50;--paper:#fff8ec;--gold:#c18a3c;--rust:#873f2d;--deep:#263c3b;--line:#e6d3b4}
+*{box-sizing:border-box}body{margin:0;background:#f2e7d5;color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+header{background:linear-gradient(120deg,#263c3b,#4a5542);color:#fff8ec;padding:30px 6vw 26px;border-bottom:5px solid #c18a3c}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{letter-spacing:2px;text-transform:uppercase;font:700 12px Arial,sans-serif;color:#edc77e}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:#fff8ec;text-decoration:none;border:1px solid #82918a;padding:8px 12px;border-radius:20px;font:13px Arial}
+.hero{max-width:1000px;margin:30px auto 0}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.02;margin:12px 0}.hero p{font:17px/1.6 Arial,sans-serif;color:#f2e5d0;max-width:760px}.tag{display:inline-block;background:#c18a3c;color:#251a13;padding:7px 12px;border-radius:4px;font:700 11px Arial;letter-spacing:1px;text-transform:uppercase}
+main{max-width:1100px;margin:auto;padding:30px 22px 70px}.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch}.panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 8px 25px #5a3d1910}.panel h2{margin:0 0 12px;font-size:25px}.panel p,.panel li{font:15px/1.65 Arial,sans-serif;color:#59483d}.fact{background:#efe0c7;border-left:4px solid var(--gold);padding:13px 15px;border-radius:4px;font:14px/1.55 Arial}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:38px 0 15px}.section-title h2{font-size:30px;margin:0}.section-title span{font:12px Arial;color:var(--muted)}
+.story-layout{display:grid;grid-template-columns:270px 1fr;gap:18px}.scene-list{display:flex;flex-direction:column;gap:8px}.scene-btn{cursor:pointer;text-align:left;border:1px solid var(--line);background:#fffaf1;border-radius:10px;padding:13px;color:var(--ink);font:14px Arial;transition:.2s}.scene-btn b{display:block;color:var(--rust);margin-bottom:4px}.scene-btn.active{background:var(--deep);color:#fff8ec;border-color:var(--deep)}.scene-btn.active b{color:#edc77e}
+.scene{min-height:370px;position:relative;overflow:hidden;background:linear-gradient(145deg,#e7c99c,#f9edda 55%,#d5ad73);border-radius:14px;border:1px solid #c6a16b;padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.scene:before{content:"";position:absolute;inset:12px;border:1px solid #a66e3d77;border-radius:8px;pointer-events:none}
+.scene-painting{display:block;width:100%;max-width:690px;height:260px;object-fit:cover;object-position:center;border:7px solid #fff4df;border-radius:12px;box-shadow:0 8px 22px #59351f35;margin:10px auto 18px}
+.scene h3{font-size:27px;margin:8px 0;color:#593321}.scene p{font:16px/1.65 Arial,sans-serif;max-width:700px;color:#4e3b2e;margin:0}.scene .caption{font:11px Arial;text-transform:uppercase;letter-spacing:1.5px;color:#805a36}
+.controls{display:flex;justify-content:space-between;gap:10px;margin-top:15px}.btn{border:0;border-radius:7px;padding:11px 17px;background:var(--rust);color:white;cursor:pointer;font:700 13px Arial}.btn.secondary{background:#e9d7bc;color:#39271e}.btn:disabled{opacity:.4;cursor:not-allowed}
+.meanings{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.meaning{background:var(--paper);border:1px solid var(--line);padding:18px;border-radius:12px}.meaning .ico{font-size:28px}.meaning h3{margin:8px 0}.meaning p{font:14px/1.55 Arial;color:#59483d}
+.quiz{margin-top:30px}.question{font:18px/1.5 Arial;margin:12px 0}.option{display:block;width:100%;text-align:left;background:#fffaf1;border:1px solid var(--line);border-radius:8px;padding:12px;margin:8px 0;cursor:pointer;font:14px Arial}.option:hover{border-color:var(--gold)}.feedback{font:14px Arial;margin-top:12px;min-height:22px;color:var(--rust)}
+footer{text-align:center;background:#263c3b;color:#f5e7d1;padding:25px;font:12px/1.7 Arial}
+@media(max-width:760px){.scene-painting{height:220px}.intro,.story-layout{grid-template-columns:1fr}.scene-list{display:grid;grid-template-columns:1fr 1fr}.meanings{grid-template-columns:1fr}.scene{min-height:350px}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="brand">Ajanta Stories · Interactive Heritage</div><nav><a href="#about">About</a><a href="#story">Storyboard</a><a href="#themes">Themes</a><a href="#quiz">Quiz</a></nav></div>
+<div class="hero"><span class="tag">A visual journey through Cave 1</span><h1>The Mahajanaka<br>Jataka</h1><p>Explore a story of courage, endurance and renunciation, associated with the celebrated narrative paintings of Ajanta. Move through the episodes, discover their meaning and test what you have learned.</p></div></header>
+<main>
+<section id="about" class="intro">
+<div class="panel"><h2>About Ajanta</h2><p>The Ajanta Caves in Maharashtra are a group of Buddhist rock-cut monuments renowned for their monasteries, prayer halls, sculpture and mural paintings. The paintings use expressive figures, gestures, costumes and settings to communicate stories and moral ideas.</p><p>This digital storyboard presents the <b>Mahajanaka Jataka</b>, a story from the previous-life narratives of the Buddha. The episodes below are a learning retelling, not a claim to reproduce every detail or sequence of the original wall painting.</p></div>
+<div class="panel"><h2>Story at a glance</h2><div class="fact"><b>Central idea</b><br>True strength is shown through perseverance, wisdom and the ability to look beyond material comfort.</div><ul><li><b>Location:</b> Ajanta, Cave 1</li><li><b>Tradition:</b> Buddhist Jataka storytelling</li><li><b>Key values:</b> courage, effort, reflection and renunciation</li></ul></div>
+</section>
+<section id="story"><div class="section-title"><h2>Explore the storyboard</h2><span id="count">Scene 1 of 8</span></div>
+<div class="story-layout"><div class="scene-list" id="sceneList"></div><article class="scene" aria-live="polite"><div><div class="caption" id="sceneLabel">Episode 01</div><img class="scene-painting" id="scenePainting" src="paintings/scene1.jpg" alt="Ajanta-inspired painting for this scene"><h3 id="sceneTitle">The Prince</h3><p id="sceneText"></p></div><div class="caption" id="sceneMoral"></div></article></div>
+<div class="controls"><button class="btn secondary" id="prev">← Previous</button><button class="btn" id="next">Next scene →</button></div></section>
+<section id="themes"><div class="section-title"><h2>Ideas behind the story</h2><span>Interpretation</span></div><div class="meanings">
+<div class="meaning"><div class="ico">🌊</div><h3>Perseverance</h3><p>Mahajanaka’s struggle at sea represents determination in the face of overwhelming difficulty.</p></div>
+<div class="meaning"><div class="ico">🪷</div><h3>Wisdom</h3><p>His experiences lead him to reflect on the limits of wealth, status and sensory pleasure.</p></div>
+<div class="meaning"><div class="ico">🌳</div><h3>Renunciation</h3><p>Leaving royal life symbolises the search for a deeper purpose beyond power and possessions.</p></div>
+</div></section>
+<section id="quiz" class="panel quiz"><div class="section-title"><h2>Quick knowledge check</h2><span>3 questions</span></div><div id="quizArea"></div><button class="btn secondary" id="restartQuiz">Restart quiz</button></section>
+</main>
+<footer>AJANTA STORIES · An educational storyboard project<br>Created for classroom learning · Illustrative icons are symbolic, not photographs of Ajanta murals.</footer>
+<script>
+const scenes=[
+{title:"The Prince and His Purpose",art:"👑",text:"Prince Mahajanaka is associated with a royal lineage and a difficult destiny. The story introduces a thoughtful character whose journey will test both his physical courage and his understanding of life.",moral:"A meaningful journey begins with purpose."},
+{title:"The Voyage Begins",art:"⛵",text:"Mahajanaka boards a merchant ship and sets out across the ocean. The voyage represents the uncertainty of worldly life and the challenges that can arise even when a person has a clear goal.",moral:"Preparation does not remove every risk."},
+{title:"The Storm",art:"🌩️",text:"A violent storm strikes the ship. The vessel is wrecked and the passengers are thrown into the sea. The sudden disaster tests Mahajanaka’s resolve.",moral:"Adversity reveals inner strength."},
+{title:"Effort in the Ocean",art:"🌊",text:"Rather than surrendering to despair, Mahajanaka continues swimming. His sustained effort is central to the episode and distinguishes him from those who lose hope.",moral:"Keep making an effort, even in uncertainty."},
+{title:"Manimekhala’s Rescue",art:"✨",text:"The celestial guardian Manimekhala sees Mahajanaka’s extraordinary determination and rescues him from the ocean. The episode connects human effort with divine protection.",moral:"Courage and effort deserve recognition."},
+{title:"Return and Kingship",art:"🏛️",text:"Mahajanaka reaches the kingdom and eventually becomes its ruler. He accepts the responsibilities of kingship, bringing the journey from danger to public life.",moral:"Leadership carries responsibility."},
+{title:"Reflection in the Palace",art:"🪔",text:"Although surrounded by royal comfort, Mahajanaka reflects on impermanence. Pleasure, wealth and power cannot provide lasting fulfilment by themselves.",moral:"Comfort is not the same as lasting wisdom."},
+{title:"The Choice to Renounce",art:"🧘",text:"Mahajanaka leaves the royal life to pursue spiritual understanding. The story closes by emphasising reflection, discipline and freedom from attachment.",moral:"The highest victory may be over attachment."}
+];
+let current=0;
+const list=document.getElementById('sceneList');
+scenes.forEach((s,i)=>{const b=document.createElement('button');b.className='scene-btn';b.innerHTML=`<b>${String(i+1).padStart(2,'0')} · ${s.title}</b><span>Open episode</span>`;b.onclick=()=>showScene(i);list.appendChild(b)});
+function showScene(i){current=i;const s=scenes[i];const painting=document.getElementById("scenePainting");painting.src=`paintings/scene${i+1}.jpg`;painting.alt=`Ajanta-inspired illustration: ${s.title}`;document.getElementById('sceneLabel').textContent=`Episode ${String(i+1).padStart(2,'0')}`;document.getElementById('sceneArt').textContent=s.art;document.getElementById('sceneTitle').textContent=s.title;document.getElementById('sceneText').textContent=s.text;document.getElementById('sceneMoral').textContent=s.moral;document.getElementById('count').textContent=`Scene ${i+1} of ${scenes.length}`;[...list.children].forEach((b,j)=>b.classList.toggle('active',i===j));document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===scenes.length-1}
+document.getElementById('prev').onclick=()=>showScene(current-1);document.getElementById('next').onclick=()=>showScene(current+1);showScene(0);
+const questions=[{q:"Which Jataka story is presented in this storyboard?",o:["Vessantara Jataka","Mahajanaka Jataka","Sibi Jataka"],a:1,why:"The storyboard focuses on Prince Mahajanaka and his journey."},{q:"Who rescues Mahajanaka from the ocean?",o:["Manimekhala","A palace guard","A merchant"],a:0,why:"Manimekhala is the celestial guardian who rescues him."},{q:"What is a central message of the story?",o:["Wealth is permanent","Power is the only goal","Perseverance and reflection matter"],a:2,why:"The story highlights effort, wisdom and renunciation."}];
+let qi=0,score=0,answered=false;
+function renderQuiz(){const q=questions[qi];document.getElementById('quizArea').innerHTML=`<div class="question"><b>Q${qi+1}.</b> ${q.q}</div>`+q.o.map((v,i)=>`<button class="option" data-i="${i}">${String.fromCharCode(65+i)}. ${v}</button>`).join('')+`<div class="feedback" id="feedback"></div><button class="btn" id="quizNext" disabled>${qi===2?'See result':'Next question'}</button>`;document.querySelectorAll('.option').forEach(b=>b.onclick=()=>{if(answered)return;answered=true;const correct=Number(b.dataset.i)===q.a;if(correct)score++;document.getElementById('feedback').textContent=(correct?'Correct! ':'Not quite. ')+q.why;document.getElementById('quizNext').disabled=false});document.getElementById('quizNext').onclick=()=>{if(qi<2){qi++;answered=false;renderQuiz()}else{document.getElementById('quizArea').innerHTML=`<h3>You scored ${score} out of 3</h3><p class="question">Thanks for exploring the Mahajanaka Jataka.</p>`;}}}
+document.getElementById('restartQuiz').onclick=()=>{qi=0;score=0;answered=false;renderQuiz()};renderQuiz();
+</script>
+</body></html>
